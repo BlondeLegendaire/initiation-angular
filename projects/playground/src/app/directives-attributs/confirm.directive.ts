@@ -1,5 +1,4 @@
 import {Directive, HostListener, Input} from "@angular/core";
-import {withEnabledBlockingInitialNavigation} from "@angular/router";
 
 @Directive({
   selector: "a[confirm]"

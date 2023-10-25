@@ -5,7 +5,7 @@ import {first} from "rxjs";
   selector: 'user-profile',
   template: `
       <h3 [class.hired]="isHired">{{ firstname | titlecase}} {{ lastname | uppercase }}</h3>
-      <img [src]="avatar" />
+      <img [src]="avatar" alt="Avatar"/>
       Métier : <strong>{{ job }}</strong> ({{revenue | currency: 'EUR':'symbol' }} / mois)
       <button (click)="onClickButton($event.clientX)" >Embaucher</button>
       <input
